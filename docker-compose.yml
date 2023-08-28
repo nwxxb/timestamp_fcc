@@ -1,0 +1,15 @@
+version: '3.8'
+
+services: 
+  app:
+    build: .
+    container_name: timestamp_fcc
+    command: npm run start
+    ports:
+      - 3000:${PORT}
+    env_file:
+      - .env
+    volumes:
+      - .:/code
+        # probably we can use .dockerignore
+      - /code/node_modules
