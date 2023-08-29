@@ -11,5 +11,4 @@ services:
       - .env
     volumes:
       - .:/code
-        # probably we can use .dockerignore
       - /code/node_modules
