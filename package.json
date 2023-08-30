@@ -4,8 +4,8 @@
   "description": "An FCC Backend Challenge",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "cross-env NODE_ENV=test PORT=1234 jest"
+    "start": "nodemon server.js",
+    "test": "cross-env NODE_ENV=test PORT=1234 jest --detectOpenHandles"
   },
   "jest": {
     "testEnvironment": "node",
