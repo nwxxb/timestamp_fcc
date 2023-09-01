@@ -10,4 +10,4 @@ EXPOSE ${PORT}
 
 COPY . ./
 
-CMD ["node", "index.js"]
+CMD ["node", "server.js"]
